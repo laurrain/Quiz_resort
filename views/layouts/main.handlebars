@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fun in the City</title>
+	<link rel="stylesheet" href="/css/magnific-popup.css"> 
+		<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+		<!-- Magnific Popup core JS file -->
+	<script src="/js/magnific-popup.js" >  </script>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/main_page.css">
+	<script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,800,800italic' rel='stylesheet' type='text/css'>
+	<script type='text/javascript' src="static/js/jquery.text3d.js"></script>		
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700,800,900,800italic,900italic,700italic,500italic' rel='stylesheet' type='text/css'>
+
+	<!-- I just added this now -->
+	<script src="/js/typed.js"></script>
+	
+</head>
+
+<body>
+
+    	<div id="mainContent" class=".col-md-6">
+    	   <!-- <div id='edit' class=".col-md-6"></div> -->
+    	
+		  
+    	  {{{body}}}
+
+    	 </div>
+
+<script type="text/javascript">
+			$('.open-popup-link').magnificPopup({
+  				type:'inline',
+ 				 midClick: true 
+				});
+
+			$("#city").text3d({
+				depth: 6,
+				angle: 135,
+				color: "#aaa",
+				lighten: -0.1,
+				shadowDepth: 30,
+				shadowAngle: 45,
+				shadowOpacity: 0.2
+			});
+			$('#city').mouseenter(function(){
+				
+				$("#city").text3d({
+				depth: 6,
+				angle: 235,
+				color: "#000",
+				lighten: -0.1,
+				shadowDepth: 80,
+				shadowAngle: 45,
+				shadowOpacity: 0.2
+			});
+			})
+			$('#city').mouseleave(function(){
+				
+				$("#city").text3d({
+				depth: 6,
+				angle: 135,
+				color: "#aaa",
+				lighten: -0.1,
+				shadowDepth: 80,
+				shadowAngle: 45,
+				shadowOpacity: 0.2
+			});
+			})</script>
+
+
+</body>
+</html>
+
